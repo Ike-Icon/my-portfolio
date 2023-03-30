@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single Page Website Template</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <!-- navigation & header intro -->
+      <section class="ai-intro-tabs">
+        <h1>STICKY SLIDER NAV</h1>
+        <h3>Sliding content with sticky tab nav</h3>
+        <div class="ai-intro-tabs-container">
+          <a class="ai-intro-tab" href="#home">Home</a>
+          <a class="ai-intro-tab" href="#about">About</a>
+          <a class="ai-intro-tab" href="#services">Services</a>
+          <a class="ai-intro-tab" href="#portfolio">Portfolio</a>
+          <a class="ai-intro-tab" href="#contact">Contact</a>
+          <span class="ai-intro-tab-slider"></span>
+        </div>
+      </section>
     </header>
 
-    <section id="home">
+    <section class="ai-slide" id="home">
       <!-- Home Section Content -->
       <h1>Hi!</h1>
       <h2>I'm Isaac</h2>
@@ -27,7 +31,7 @@
       <p>hazardos@gmail.com</p>
     </section>
 
-    <section id="about">
+    <section class="ai-slide" id="about">
       <!-- About Section Content -->
       <h1>About</h1>
       <p>
@@ -37,7 +41,7 @@
       </p>
     </section>
 
-    <section id="services">
+    <section class="ai-slide" id="services">
       <!-- Services Section Content -->
       <h1>Services</h1>
       <ul>
@@ -47,7 +51,7 @@
       </ul>
     </section>
 
-    <section id="portfolio">
+    <section class="ai-slide" id="portfolio">
       <!-- Portfolio Section Content -->
       <h1>Portfolio</h1>
       <ul>
@@ -57,7 +61,7 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section class="ai-slide" id="contact">
       <!-- Contact Section Content -->
       <h1>Contact</h1>
       <form>
@@ -76,6 +80,6 @@
     <footer>
       <p>Copyright &copy; 2023</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/common/nav.js"></script>
   </body>
 </html>

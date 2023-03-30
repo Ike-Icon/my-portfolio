@@ -1,0 +1,23 @@
+#about{
+    background-image: url('/css/src/utility/images/about-back.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    // color: #fff;
+    // background: #eee;
+    text-align: center;
+    padding: 0 2em;
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      letter-spacing: 1rem;
+    }
+    h3 {
+      font-size: 1rem;
+      letter-spacing: 0.3rem;
+      opacity: 0.6;
+    }
+}

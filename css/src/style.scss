@@ -1,0 +1,53 @@
+// Config
+
+
+// Bower Components
+
+
+// General DOM selector styles
+
+
+// Fonts & General Type Styling
+
+
+// 3rd Party Addons
+
+// ****************
+// Atomic Design
+
+@import "atoms/links";
+
+// molecules
+@import "molecules/_navigation.scss";
+@import "molecules/contact-form";
+
+// organisms
+@import "organisms/_header.scss";
+@import "organisms/footer";
+
+
+// Pages 
+@import "pages/home";
+@import "pages/about";
+@import "pages/services";
+@import "pages/portfolio";
+@import "pages/contact";
+
+body {
+    font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+@media (min-width: 700px) {
+	.ai-intro-tabs,
+	.ai-slide {
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+	}
+	.et-hero-tab {
+		font-size: 1rem;
+	}
+}

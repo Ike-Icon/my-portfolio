@@ -3,17 +3,9 @@ body {
   font-family: Arial, sans-serif;
 }
 
-header {
-  background-image: url('/images/header-back-1.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-nav {
+
+/* nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -33,9 +25,9 @@ li {
 a {
   color: white;
   text-decoration: none;
-}
+} */
 
-section {
+/* section {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -43,13 +35,10 @@ section {
   flex-direction: column;
   background-size: cover;
   background-position: center;
-}
+} */
 
-#home {
-  background-image: url('/images/home-back-1.jpg');
-  
-}
 
+/* 
 #about {
   background-image: url('/images/about-back.jpg');
 }
@@ -65,7 +54,7 @@ section {
 
 #contact {
   background-image: url('/images/contact-back-3.jpg');
-}
+} */
 
 h1 {
   font-size: 3rem;
@@ -82,7 +71,7 @@ li {
   margin-bottom: 1rem;
 }
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,11 +101,5 @@ input[type='submit'] {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-}
+} */
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}

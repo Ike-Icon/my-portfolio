@@ -1,0 +1,33 @@
+// header {
+//   background-image: url("/css/src/utility/images/header-back-1.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   height: 100vh;
+//   display: flex;
+//   // justify-content: center;
+//   // align-items: center;
+// }
+
+.ai-intro-tabs{
+  background-image: url("/css/src/utility/images/header-back-1.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  // background: #eee;
+  text-align: center;
+  padding: 0 2em;
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+  }
+}
