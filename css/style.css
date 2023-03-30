@@ -10,8 +10,8 @@ a {
   bottom: 0;
   width: 100%;
   height: 70px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  background: rgba(0, 24, 41, 0.7607843137);
+  box-shadow: 0 10px 150px rgba(0, 0, 0, 0.1);
+  background: rgba(198, 216, 211, 0.8431372549);
   z-index: 1;
 }
 .ai-intro-tabs-container--top {
@@ -24,15 +24,14 @@ a {
   justify-content: center;
   align-items: center;
   flex: 1;
-  color: #fff;
+  color: #001829;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
 }
 .ai-intro-tab:hover {
-  color: #000;
-  background: #C6D8D3;
+  color: #fff;
+  background: rgba(51, 51, 51, 0.568627451);
   transition: all 0.5s ease;
-  border-radius: 10px;
 }
 
 .ai-intro-tab-slider {
@@ -40,7 +39,7 @@ a {
   bottom: 0;
   width: 0;
   height: 10px;
-  background: #C6D8D3;
+  background: #333;
   transition: left 0.3s ease;
 }
 
@@ -82,7 +81,7 @@ input[type=submit] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   position: relative;
   color: #fff;
   text-align: center;
@@ -111,10 +110,13 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
   position: relative;
-  margin: 10px 0;
+  margin: 0 20px 0 0;
+  background: #eee;
   text-align: center;
+  /* Start Landing Page */
+  /* End Landing Page */
 }
 #home h1 {
   font-size: 2rem;
@@ -129,136 +131,103 @@ footer {
 #home .myself-img {
   display: flex;
   background-image: url("/css/src/utility/images/portfolio-back.jpg");
-  width: 70%;
-  height: 50%;
+  width: 80%;
+  height: 40%;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 20px;
-  border-radius: 20px;
+  margin: 20px 0 0 0;
+  box-shadow: 0 10px 150px rgba(0, 0, 0, 0.664);
 }
 #home .myself {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.897);
   width: 40%;
   height: 100%;
-  box-shadow: 100px 0 30px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 100px 0 30px 0 rgba(0, 0, 0, 0.836);
   z-index: 0;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
 }
-#home .card {
+#home .landing-page {
   position: relative;
-  width: 70%;
+  background-color: #FFF;
+  width: 78%;
   height: 50%;
+  margin: 50px 0 20px 0;
+  padding: 20px;
+}
+#home .landing-page .header-area {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  transition-delay: 0.5s;
-  background-color: rgba(215, 233, 250, 0.527);
-  margin: 30px 0;
-  border-radius: 20px;
-}
-#home .card:hover {
-  width: 60%;
-  transition-delay: 0.5s;
-}
-#home .card .circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#home .card .circle::before {
-  content: "";
-  position: absolute;
-  top: 30;
-  left: 2;
-  right: 2;
-  width: 70%;
-  height: 90%;
-  border-radius: 50%;
-  background: #191919;
-  border: 8px solid var(--clr);
-  filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
-  transition: 0.5s, background 0.5s;
-  transition-delay: 0.75s, 1s;
-}
-#home .card:hover .circle::before {
-  transition-delay: 0.5s;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  background: var(--clr);
-}
-#home .card .circle .logo {
+  padding: 25px 0 0;
   position: relative;
-  width: 250px;
-  transition: 0.5s;
-  transition-delay: 0.5s;
 }
-#home .card:hover .circle .logo {
-  transform: scale(0);
-  transition-delay: 0s;
-}
-#home .card .product_img {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%) scale(0) rotate(315deg);
-  height: 300px;
-  transition: 0.5s ease-in-out;
-}
-#home .card:hover .product_img {
-  transition-delay: 0.75s;
-  top: 55%;
-  left: 82%;
-  height: 320px;
-  transform: translate(-50%, -50%) scale(1) rotate(15deg);
-}
-#home .card .content {
-  position: absolute;
-  width: 60%;
-  left: 10%;
-  padding: 20px 20px 20px 20px;
-  opacity: 0;
-  transition: 0.5s;
-  visibility: hidden;
-}
-#home .card:hover .content {
-  transition-delay: 0.75s;
-  opacity: 1;
-  visibility: visible;
-  left: 3px;
-  margin-top: 15px;
-}
-#home .card .content h2 {
-  color: #fff;
+#home .landing-page .header-area .logo {
   text-transform: uppercase;
-  font-size: 2em;
-  line-height: 1.3em;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 19px;
+  width: 300px;
+  color: #f7f4f4;
 }
-#home .card .content p {
-  color: #fff;
+#home .landing-page .header-area .links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
 }
-#home .card .content a {
-  position: relative;
-  color: #fff;
-  background: #222222;
-  padding: 10px 20px;
-  border-radius: 10px;
+#home .landing-page .header-area .links li {
   display: inline-block;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 15px;
+  margin-left: 30px;
+  color: #5d5d5d;
+  cursor: pointer;
+}
+#home .landing-page .header-area .links li:last-child {
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 18px;
+  color: #FFF;
+  background-color: #6c63ff;
+}
+#home .landing-page .info {
+  width: 35%;
+  float: left;
+  margin-top: 130px;
+}
+#home .landing-page .info h1 {
+  font-size: 44px;
+  margin: 0 0 20px;
+  line-height: 1.4;
+  color: #5d5d5d;
+}
+#home .landing-page .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #5d5d5d;
+}
+#home .landing-page .info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #6c63ff;
+}
+#home .landing-page .image {
+  width: 40%;
+  height: 30%;
+  float: right;
+  margin-top: 35px;
+}
+#home .landing-page .image img {
+  max-width: 80%;
+}
+#home .clearfix {
+  clear: both;
 }
 
 #about {
