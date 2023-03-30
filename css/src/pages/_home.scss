@@ -1,21 +1,15 @@
 #home {
-  // background-image: url("/css/src/utility/images/");
   display: flex;
   flex-direction: column;
-  // grid-template-columns: repeat(2, 1fr);
-  // grid-template-rows: repeat(1, 1fr);
-  // grid-gap: 10px;
   justify-content: center;
   align-items: center;
   height: 120vh;
   position: relative;
-  // background-size: cover;
-  // background-position: center;
-  margin: 0 20px 0 0;
+  margin: 40px 0 0 0;
   // color: #fff;
   background: #eee;
   text-align: center;
-  // padding: 0 2em;
+  padding: 0 2em;
   h1 {
     font-size: 2rem;
     margin: 0;
@@ -27,28 +21,20 @@
     opacity: 0.6;
   }
 
-  // .card{
-  //   grid-column: 2/2;
-  //   background-image: url("/css/src/utility/images/contact-back-2.jpg");
-  //   width: 100%;
-  //   height: 100vh;
-  //   background-size: cover;
-  // }
 
   .myself-img {
     display: flex;
-    background-image: url("/css/src/utility/images/portfolio-back.jpg");
+    background-image: url("/assets/images/portfolio-back.jpg");
     width: 80%;
     height: 40%;
     background-size: cover;
-    // width: 736px;
-    // height: 352px;
-    // background-size: 736px 352px;
     background-repeat: no-repeat;
-    margin: 20px 0 0 0;
-    // border-radius: 20px;
+    margin: 10px 0 0 0;
     box-shadow: 0 10px 150px rgba(0, 0, 0, 0.664);
   }
+
+  
+  
 
   .myself {
     background-color: rgba(0, 0, 0, 0.897);

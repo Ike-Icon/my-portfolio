@@ -27,6 +27,7 @@ a {
   color: #001829;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
+  font-size: 1.3rem;
 }
 .ai-intro-tab:hover {
   color: #fff;
@@ -76,7 +77,7 @@ input[type=submit] {
 }
 
 .ai-intro-tabs {
-  background-image: url("/css/src/utility/images/header-back-1.jpg");
+  background-image: url("/assets/images/header-back-1.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,9 +113,10 @@ footer {
   align-items: center;
   height: 120vh;
   position: relative;
-  margin: 0 20px 0 0;
+  margin: 40px 0 0 0;
   background: #eee;
   text-align: center;
+  padding: 0 2em;
   /* Start Landing Page */
   /* End Landing Page */
 }
@@ -130,12 +132,12 @@ footer {
 }
 #home .myself-img {
   display: flex;
-  background-image: url("/css/src/utility/images/portfolio-back.jpg");
+  background-image: url("/assets/images/portfolio-back.jpg");
   width: 80%;
   height: 40%;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
   box-shadow: 0 10px 150px rgba(0, 0, 0, 0.664);
 }
 #home .myself {
@@ -231,7 +233,7 @@ footer {
 }
 
 #about {
-  background-image: url("/css/src/utility/images/about-back.jpg");
+  background-image: url("/assets/images/about-back.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,7 +256,7 @@ footer {
 }
 
 #services {
-  background-image: url("/css/src/utility/images/service-back-2.jpg");
+  background-image: url("/assets/images/service-back-2.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -288,9 +290,10 @@ footer {
   position: relative;
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #000;
+  background: #eee;
   text-align: center;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 #portfolio h1 {
   font-size: 2rem;
@@ -304,7 +307,7 @@ footer {
 }
 
 #contact {
-  background-image: url("/css/src/utility/images/contact-back-3.jpg");
+  background-image: url("/assets/images/contact-back-3.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;

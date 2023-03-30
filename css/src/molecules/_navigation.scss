@@ -1,26 +1,4 @@
-// .ai-intro-tabs,
-// .ai-slide{
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     height: 100vh;
-//     position: relative;
-//     color: #fff;
-//     // background: #eee;
-// 		text-align: center;
-// 		padding: 0 2em;
-//     h1 {
-//         font-size: 2rem;
-//         margin: 0;
-//         letter-spacing: 1rem;
-//     }
-//     h3 {
-//         font-size: 1rem;
-//         letter-spacing: 0.3rem;
-//         opacity: 0.6;
-//     }
-// }
+
 
 .ai-intro-tabs-container{
     display: flex;
@@ -47,12 +25,12 @@
     color: #001829;
     letter-spacing: 0.1rem;
 		transition: all 0.5s ease;
-		// font-size: 0.8rem;
+		font-size: 1.3rem;
 	  &:hover {
 			color:#fff;
       background: #33333391;
 			transition: all 0.5s ease;
-      // border-radius: 10px;
+      
     }
 }
 
