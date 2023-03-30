@@ -10,9 +10,9 @@ a {
   bottom: 0;
   width: 100%;
   height: 70px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 24, 41, 0.7607843137);
+  z-index: 1;
 }
 .ai-intro-tabs-container--top {
   position: fixed;
@@ -24,22 +24,23 @@ a {
   justify-content: center;
   align-items: center;
   flex: 1;
-  color: #000;
+  color: #fff;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
 }
 .ai-intro-tab:hover {
-  color: white;
-  background: rgba(102, 177, 241, 0.8);
+  color: #000;
+  background: #C6D8D3;
   transition: all 0.5s ease;
+  border-radius: 10px;
 }
 
 .ai-intro-tab-slider {
   position: absolute;
   bottom: 0;
   width: 0;
-  height: 6px;
-  background: #66B1F1;
+  height: 10px;
+  background: #C6D8D3;
   transition: left 0.3s ease;
 }
 
@@ -106,15 +107,15 @@ footer {
 }
 
 #home {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
   justify-content: center;
   align-items: center;
   height: 100vh;
   position: relative;
   background-size: cover;
   background-position: center;
-  background: #eee;
   text-align: center;
 }
 #home h1 {
@@ -126,6 +127,122 @@ footer {
   font-size: 1rem;
   letter-spacing: 0.3rem;
   opacity: 0.6;
+}
+#home .myself {
+  grid-column: 1/2;
+  background-color: rgba(25, 25, 25, 0.2862745098);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+#home .card {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  grid-column: 2/2;
+}
+#home .card:hover {
+  width: 100%;
+  transition-delay: 0.5s;
+}
+#home .card .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .card .circle::before {
+  content: "";
+  position: absolute;
+  top: 30;
+  left: 2;
+  right: 2;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: #191919;
+  border: 8px solid var(--clr);
+  filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+  transition: 0.5s, background 0.5s;
+  transition-delay: 0.75s, 1s;
+}
+#home .card:hover .circle::before {
+  transition-delay: 0.5s;
+  width: 95%;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--clr);
+}
+#home .card .circle .logo {
+  position: relative;
+  width: 250px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+#home .card:hover .circle .logo {
+  transform: scale(0);
+  transition-delay: 0s;
+}
+#home .card .product_img {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%) scale(0) rotate(315deg);
+  height: 300px;
+  transition: 0.5s ease-in-out;
+}
+#home .card:hover .product_img {
+  transition-delay: 0.75s;
+  top: 55%;
+  left: 82%;
+  height: 320px;
+  transform: translate(-50%, -50%) scale(1) rotate(15deg);
+}
+#home .card .content {
+  position: absolute;
+  width: 60%;
+  left: 10%;
+  padding: 20px 20px 20px 20px;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+}
+#home .card:hover .content {
+  transition-delay: 0.75s;
+  opacity: 1;
+  visibility: visible;
+  left: 3px;
+  margin-top: 15px;
+}
+#home .card .content h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1.3em;
+}
+#home .card .content p {
+  color: #fff;
+}
+#home .card .content a {
+  position: relative;
+  color: #fff;
+  background: #222222;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
 }
 
 #about {

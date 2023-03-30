@@ -1,7 +1,10 @@
 #home {
   // background-image: url("/css/src/utility/images/");
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  // flex-direction: column;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -9,7 +12,7 @@
   background-size: cover;
   background-position: center;
   // color: #fff;
-  background: #eee;
+  // background: #eee;
   text-align: center;
   // padding: 0 2em;
   h1 {
@@ -22,4 +25,142 @@
     letter-spacing: 0.3rem;
     opacity: 0.6;
   }
+
+  // .card{
+  //   grid-column: 2/2;
+  //   background-image: url("/css/src/utility/images/contact-back-2.jpg");
+  //   width: 100%;
+  //   height: 100vh;
+  //   background-size: cover;
+  // }
+
+  .myself{
+    grid-column: 1/2;
+    // background-image: url("/css/src/utility/images/contact-back-2.jpg");
+    background-color: #19191949;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+
+
+
+
+
+  
+
+  .card {
+    position: relative;
+    width: 90%;
+    // max-width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    grid-column: 2/2;
+    // width: 100%;
+    // height: 100vh;
+    
+  }
+  .card:hover {
+    width: 100%;
+    transition-delay: 0.5s;
+  }
+  .card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid var(--clr);
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+  }
+  .card:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 95%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+  }
+  .card .circle .logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .card:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+  }
+  .card .product_img {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+  }
+  .card:hover .product_img {
+    transition-delay: 0.75s;
+    top: 55%;
+    left: 82%;
+    height: 320px;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+  }
+  .card .content {
+    position: absolute;
+    width: 60%;
+    left: 10%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+  }
+  .card:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 3px;
+    margin-top: 15px;
+  }
+  .card .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+  .card .content p {
+    color: #fff;
+  }
+  .card .content a {
+    position: relative;
+    color: #fff;
+    background: #222222;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  
 }
