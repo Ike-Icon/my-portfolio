@@ -1,16 +1,17 @@
 #home {
   // background-image: url("/css/src/utility/images/");
-  display: grid;
-  // flex-direction: column;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  // grid-template-columns: repeat(2, 1fr);
   // grid-template-rows: repeat(1, 1fr);
-  grid-gap: 10px;
+  // grid-gap: 10px;
   justify-content: center;
   align-items: center;
   height: 100vh;
   position: relative;
-  background-size: cover;
-  background-position: center;
+  // background-size: cover;
+  // background-position: center;
+  margin: 10px 0;
   // color: #fff;
   // background: #eee;
   text-align: center;
@@ -34,45 +35,61 @@
   //   background-size: cover;
   // }
 
-  .myself{
-    grid-column: 1/2;
-    // background-image: url("/css/src/utility/images/contact-back-2.jpg");
-    background-color: #19191949;
-    width: 100%;
-    height: 100vh;
+  .myself-img {
+    display: flex;
+    background-image: url("/css/src/utility/images/portfolio-back.jpg");
+    width: 70%;
+    height: 50%;
     background-size: cover;
+    // width: 736px;
+    // height: 352px;
+    // background-size: 736px 352px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    border-radius: 20px;
   }
 
-
-
-
-
-  
+  .myself {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: 100%;
+    box-shadow: 100px 0 30px 0 rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+  }
 
   .card {
     position: relative;
-    width: 90%;
+    width: 70%;
     // max-width: 100%;
-    height: 80%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
     transition-delay: 0.5s;
-    grid-column: 2/2;
+    // grid-column: 2/2;
     // width: 100%;
     // height: 100vh;
-    
+    background-color: rgba(215, 233, 250, 0.527);
+    margin: 30px 0;
+    border-radius: 20px;
   }
   .card:hover {
-    width: 100%;
+    width: 60%;
     transition-delay: 0.5s;
   }
   .card .circle {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
     border-radius: 20px;
     display: flex;
@@ -85,8 +102,8 @@
     top: 30;
     left: 2;
     right: 2;
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 90%;
     border-radius: 50%;
     background: #191919;
     border: 8px solid var(--clr);
@@ -96,7 +113,7 @@
   }
   .card:hover .circle::before {
     transition-delay: 0.5s;
-    width: 95%;
+    width: 100%;
     height: 100%;
     border-radius: 20px;
     background: var(--clr);
@@ -162,5 +179,4 @@
     font-weight: 600;
     margin-top: 15px;
   }
-  
 }

@@ -107,15 +107,13 @@ footer {
 }
 
 #home {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   position: relative;
-  background-size: cover;
-  background-position: center;
+  margin: 10px 0;
   text-align: center;
 }
 #home h1 {
@@ -128,33 +126,51 @@ footer {
   letter-spacing: 0.3rem;
   opacity: 0.6;
 }
-#home .myself {
-  grid-column: 1/2;
-  background-color: rgba(25, 25, 25, 0.2862745098);
-  width: 100%;
-  height: 100vh;
+#home .myself-img {
+  display: flex;
+  background-image: url("/css/src/utility/images/portfolio-back.jpg");
+  width: 70%;
+  height: 50%;
   background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+#home .myself {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40%;
+  height: 100%;
+  box-shadow: 100px 0 30px 0 rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
 }
 #home .card {
   position: relative;
-  width: 90%;
-  height: 80%;
+  width: 70%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
   transition-delay: 0.5s;
-  grid-column: 2/2;
+  background-color: rgba(215, 233, 250, 0.527);
+  margin: 30px 0;
+  border-radius: 20px;
 }
 #home .card:hover {
-  width: 100%;
+  width: 60%;
   transition-delay: 0.5s;
 }
 #home .card .circle {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   border-radius: 20px;
   display: flex;
@@ -167,8 +183,8 @@ footer {
   top: 30;
   left: 2;
   right: 2;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 90%;
   border-radius: 50%;
   background: #191919;
   border: 8px solid var(--clr);
@@ -178,7 +194,7 @@ footer {
 }
 #home .card:hover .circle::before {
   transition-delay: 0.5s;
-  width: 95%;
+  width: 100%;
   height: 100%;
   border-radius: 20px;
   background: var(--clr);
@@ -255,6 +271,7 @@ footer {
   position: relative;
   text-align: center;
   padding: 0 2em;
+  margin: 10px 0;
 }
 #about h1 {
   font-size: 2rem;
@@ -279,6 +296,7 @@ footer {
   background-position: center;
   text-align: center;
   padding: 0 2em;
+  margin: 20px 0;
 }
 #services h1 {
   font-size: 2rem;
@@ -303,6 +321,7 @@ footer {
   background-position: center;
   color: #fff;
   text-align: center;
+  margin: 10px 0;
 }
 #portfolio h1 {
   font-size: 2rem;
@@ -326,6 +345,7 @@ footer {
   background-size: cover;
   background-position: center;
   text-align: center;
+  margin: 10px 0;
 }
 #contact h1 {
   font-size: 2rem;
