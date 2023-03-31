@@ -80,7 +80,7 @@ input[type=submit] {
 }
 
 .ai-intro-tabs {
-  background-image: url("/assets/images/header-back-1.jpg");
+  background-image: url("../assets/images/header-back-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -206,7 +206,7 @@ footer {
 }
 #home .myself-img {
   display: flex;
-  background-image: url("/assets/images/portfolio-back.jpg");
+  background-image: url("../assets/images/portfolio-back.jpg");
   width: 80%;
   height: 40%;
   background-size: cover;
@@ -312,7 +312,7 @@ footer {
 }
 
 #about {
-  background-image: url("/assets/images/service-back-2.jpg");
+  background-image: url("../assets/images/service-back-2.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -336,10 +336,15 @@ footer {
   letter-spacing: 0.3rem;
   opacity: 0.6;
 }
+#about p {
+  margin: 0;
+  line-height: 1.8em;
+  font-size: 15px;
+}
 
 .about-info-wrap {
   color: #eee;
-  max-width: 90%;
+  max-width: 50%;
   height: 90%;
 }
 
@@ -349,7 +354,7 @@ footer {
   text-align: left;
 }
 .about-info .para-1, .about-info .para-2 {
-  background: rgba(51, 51, 51, 0.7333333333);
+  background: rgba(51, 51, 51, 0.5607843137);
   margin: 0 20px 0 10px;
 }
 
@@ -390,7 +395,6 @@ footer {
 }
 
 #portfolio {
-  background-image: url("/css/src/utility/images/portfolio-back.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -416,7 +420,7 @@ footer {
 }
 
 #contact {
-  background-image: url("/assets/images/contact-back-3.jpg");
+  background-image: url("../assets/images/contact-back-3.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;

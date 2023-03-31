@@ -1,5 +1,5 @@
 #about {
-  background-image: url("/assets/images/service-back-2.jpg");
+  background-image: url("../assets/images/service-back-2.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,10 +26,16 @@
     letter-spacing: 0.3rem;
     opacity: 0.6;
   }
+  p {
+    margin: 0;
+    line-height: 1.8em;
+    font-size: 15px;
+    // color: #5d5d5d;
+}
 }
 .about-info-wrap{
   color: #eee;
-  max-width: 90%;
+  max-width: 50%;
   height: 90%;
 }
 
@@ -39,7 +45,7 @@
   text-align: left;
   
   .para-1, .para-2{
-    background: #333333bb;
+    background: #3333338f;
     margin:0 20px 0 10px;
   }
 }
