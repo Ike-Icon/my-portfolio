@@ -8,8 +8,7 @@
     width: 100%;
     height: 70px;
     box-shadow: 0 10px 150px rgba(0, 0, 0, 0.1);
-    // background: #001829c2;
-    background: #c6d8d3d7;
+    background: $nav-back-color;
     z-index: 1;
     &--top {
         position: fixed;
@@ -22,15 +21,15 @@
     justify-content: center;
     align-items: center;
     flex: 1;
-    color: #001829;
+    color: $nav-text-color;
     letter-spacing: 0.1rem;
 		transition: all 0.5s ease;
 		font-size: 1.3rem;
 	  &:hover {
-			color:#fff;
-      background: #33333391;
+			color:$nav-hover-text-color;
+      background: #6c63ff;
 			transition: all 0.5s ease;
-      
+      border-radius: 5px;
     }
 }
 
@@ -39,6 +38,7 @@
     bottom: 0;
     width: 0;
     height: 10px;
-    background: #333;
+    background: #6c63ff;
     transition: left 0.3s ease;
+    border-radius: 5px;
 }

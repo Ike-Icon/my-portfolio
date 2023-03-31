@@ -33,6 +33,7 @@ a {
   color: #fff;
   background: rgba(51, 51, 51, 0.568627451);
   transition: all 0.5s ease;
+  border-radius: 5px;
 }
 
 .ai-intro-tab-slider {
@@ -42,6 +43,7 @@ a {
   height: 10px;
   background: #333;
   transition: left 0.3s ease;
+  border-radius: 5px;
 }
 
 form {
@@ -78,11 +80,13 @@ input[type=submit] {
 
 .ai-intro-tabs {
   background-image: url("/assets/images/header-back-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 80vh;
   position: relative;
   color: #fff;
   text-align: center;

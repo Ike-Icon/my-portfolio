@@ -10,11 +10,13 @@
 
 .ai-intro-tabs{
   background-image: url("/assets/images/header-back-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 80vh;
   position: relative;
   color: #fff;
   // background: #eee;
