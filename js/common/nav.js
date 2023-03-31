@@ -6,7 +6,7 @@ class StickyNavigation {
 	  let self = this;
   
 	  // Add click event listener to each tab
-	  document.querySelectorAll('.ai-intro-tab').forEach(tab => {
+	  document.querySelectorAll('.ai-intro-tab, .portBtn, .ContactBtn').forEach(tab => {
 		tab.addEventListener('click', event => {
 		  event.preventDefault();
 		  self.onTabClick(event, tab);

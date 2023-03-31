@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 a {
   color: white;
   text-decoration: none;
@@ -11,7 +12,7 @@ a {
   width: 100%;
   height: 70px;
   box-shadow: 0 10px 150px rgba(0, 0, 0, 0.1);
-  background: rgba(198, 216, 211, 0.8431372549);
+  background: rgba(198, 216, 211, 0.9058823529);
   z-index: 1;
 }
 .ai-intro-tabs-container--top {
@@ -24,14 +25,14 @@ a {
   justify-content: center;
   align-items: center;
   flex: 1;
-  color: #001829;
+  color: #333;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
   font-size: 1.3rem;
 }
 .ai-intro-tab:hover {
   color: #fff;
-  background: rgba(51, 51, 51, 0.568627451);
+  background: rgba(47, 77, 67, 0.8431372549);
   transition: all 0.5s ease;
   border-radius: 5px;
 }
@@ -41,7 +42,7 @@ a {
   bottom: 0;
   width: 0;
   height: 10px;
-  background: #333;
+  background: rgba(47, 77, 67, 0.8431372549);
   transition: left 0.3s ease;
   border-radius: 5px;
 }
@@ -86,7 +87,7 @@ input[type=submit] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 50vh;
   position: relative;
   color: #fff;
   text-align: center;
@@ -102,7 +103,76 @@ input[type=submit] {
   letter-spacing: 0.3rem;
   opacity: 0.6;
 }
+.ai-intro-tabs .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 19px;
+  width: 300px;
+  color: #f7f4f4;
+}
 
+.container {
+  display: flex;
+  /*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+  display: block;
+  font: 10.5em "Montserrat";
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 8% 25%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: rgba(58, 85, 77, 0.9058823529);
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: rgba(198, 216, 211, 0.9058823529);
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #fff;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: rgba(198, 216, 211, 0.9058823529);
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #fff;
+  animation-delay: -5s;
+}
+
+.text-copy:nth-child(6) {
+  stroke: rgba(152, 182, 172, 0.9058823529);
+  animation-delay: -6s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
 footer {
   background-color: #333;
   color: white;
@@ -117,10 +187,10 @@ footer {
   align-items: center;
   height: 120vh;
   position: relative;
-  margin: 40px 0 0 0;
+  margin: 0px 0 20px 0;
   background: #eee;
   text-align: center;
-  padding: 0 2em;
+  padding: 0 3em 0em 0;
   /* Start Landing Page */
   /* End Landing Page */
 }
@@ -142,40 +212,37 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 10px 0 0 0;
-  box-shadow: 0 10px 150px rgba(0, 0, 0, 0.664);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.658);
 }
 #home .myself {
-  background-color: rgba(0, 0, 0, 0.897);
-  width: 40%;
+  background-color: rgba(0, 0, 0, 0.671);
+  width: 50%;
   height: 100%;
-  box-shadow: 100px 0 30px 0 rgba(0, 0, 0, 0.836);
   z-index: 0;
-  color: #fff;
+  color: #eee;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 10px 0 20px;
+  margin-left: auto;
+}
+#home .myself p {
+  margin: 0;
+  letter-spacing: 0.2rem;
 }
 #home .landing-page {
   position: relative;
   background-color: #FFF;
   width: 78%;
-  height: 50%;
-  margin: 50px 0 20px 0;
+  height: 40%;
+  margin-bottom: 30px;
   padding: 20px;
 }
 #home .landing-page .header-area {
   display: flex;
-  padding: 25px 0 0;
+  padding: px 0 0;
   position: relative;
-}
-#home .landing-page .header-area .logo {
-  text-transform: uppercase;
-  font-style: italic;
-  margin-top: 10px;
-  font-size: 19px;
-  width: 300px;
-  color: #f7f4f4;
 }
 #home .landing-page .header-area .links {
   list-style: none;
@@ -200,9 +267,9 @@ footer {
 #home .landing-page .info {
   width: 35%;
   float: left;
-  margin-top: 130px;
+  margin: 80px 80px;
 }
-#home .landing-page .info h1 {
+#home .landing-page .info h2 {
   font-size: 44px;
   margin: 0 0 20px;
   line-height: 1.4;
@@ -218,16 +285,24 @@ footer {
   border: 0;
   border-radius: 20px;
   padding: 12px 30px;
-  margin-top: 30px;
+  margin-top: 20px;
   cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.699);
   color: #FFF;
-  background-color: #6c63ff;
+  background-color: rgba(47, 77, 67, 0.7254901961);
+}
+#home .landing-page .info button:hover {
+  color: #fff;
+  background: rgba(47, 77, 67, 0.8431372549);
+  transition: all 0.5s ease;
+  border-radius: 5px;
 }
 #home .landing-page .image {
   width: 40%;
   height: 30%;
   float: right;
-  margin-top: 35px;
+  margin-top: 18px;
 }
 #home .landing-page .image img {
   max-width: 80%;
@@ -237,7 +312,7 @@ footer {
 }
 
 #about {
-  background-image: url("/assets/images/about-back.jpg");
+  background-image: url("/assets/images/service-back-2.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,11 +322,14 @@ footer {
   text-align: center;
   padding: 0 2em;
   margin: 10px 0;
+  background-size: cover;
+  background-position: center;
 }
 #about h1 {
-  font-size: 2rem;
   margin: 0;
   letter-spacing: 1rem;
+  font-size: 44px;
+  line-height: 1.4;
 }
 #about h3 {
   font-size: 1rem;
@@ -259,8 +337,35 @@ footer {
   opacity: 0.6;
 }
 
+.about-info-wrap {
+  color: #eee;
+  max-width: 90%;
+  height: 90%;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+.about-info .para-1, .about-info .para-2 {
+  background: rgba(51, 51, 51, 0.7333333333);
+  margin: 0 20px 0 10px;
+}
+
+.about-info .info-img {
+  width: 40%;
+  height: 30%;
+  float: left;
+  margin-top: 18px;
+}
+
+.about-info img {
+  width: 90%;
+  height: 300px;
+}
+
 #services {
-  background-image: url("/assets/images/service-back-2.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;

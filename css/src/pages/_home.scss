@@ -5,11 +5,10 @@
   align-items: center;
   height: 120vh;
   position: relative;
-  margin: 40px 0 0 0;
-  // color: #fff;
+  margin: 0px 0 20px 0;
   background: #eee;
   text-align: center;
-  padding: 0 2em;
+  padding: 0 3em 0em 0;
   h1 {
     font-size: 2rem;
     margin: 0;
@@ -30,24 +29,31 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin: 10px 0 0 0;
-    box-shadow: 0 10px 150px rgba(0, 0, 0, 0.664);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.658);
   }
 
   
   
 
   .myself {
-    background-color: rgba(0, 0, 0, 0.897);
-    width: 40%;
+    background-color: rgba(0, 0, 0, 0.671);
+    width: 50%;
     height: 100%;
-    box-shadow: 100px 0 30px 0 rgba(0, 0, 0, 0.836);
+    // box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.836);
     z-index: 0;
-    color: #fff;
+    color: #eee;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border-radius: 20px;
+    padding: 0 10px 0 20px;
+    margin-left: auto;
+    p {
+      
+      margin: 0;
+      letter-spacing: 0.2rem;
+    }
+    
     
   }
 
@@ -57,25 +63,25 @@
     position: relative;
     background-color: #FFF;
     width: 78%;
-    height: 50%;
-    margin: 50px 0 20px 0;
+    height: 40%;
+    margin-bottom: 30px;
     padding: 20px;
 }
 
 .landing-page .header-area {
     display: flex;
-    padding: 25px 0 0;
+    padding: px 0 0;
     position: relative;
 }
 
-.landing-page .header-area .logo {
-    text-transform: uppercase;
-    font-style: italic;
-    margin-top: 10px;
-    font-size: 19px;
-    width: 300px;
-    color: #f7f4f4;
-}
+// .landing-page .header-area .logo {
+//     text-transform: uppercase;
+//     font-style: italic;
+//     margin-top: 10px;
+//     font-size: 19px;
+//     width: 300px;
+//     color: #f7f4f4;
+// }
 
 .landing-page .header-area .links {
     list-style: none;
@@ -103,10 +109,10 @@
 .landing-page .info {
     width: 35%;
     float: left;
-    margin-top: 130px;
+    margin: 80px 80px;
 }
 
-.landing-page .info h1 {
+.landing-page .info h2 {
     font-size: 44px;
     margin: 0 0 20px;
     line-height: 1.4;
@@ -124,17 +130,27 @@
     border: 0;
     border-radius: 20px;
     padding: 12px 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.699);
     color: #FFF;
-    background-color: #6c63ff;
+    background-color: #2f4d43b9;
+    &:hover {
+			color: #fff;
+      background: #2f4d43d7;
+			transition: all 0.5s ease;
+      border-radius: 5px;
+    }
 }
+
+
 
 .landing-page .image {
     width: 40%;
     height: 30%;
     float: right;
-    margin-top: 35px;
+    margin-top: 18px;
 }
 
 .landing-page .image img {
