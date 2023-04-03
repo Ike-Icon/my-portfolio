@@ -1,15 +1,8 @@
-// header {
-//   background-image: url("/css/src/utility/images/header-back-1.jpg");
-//   background-size: cover;
-//   background-position: center;
-//   height: 100vh;
-//   display: flex;
-//   // justify-content: center;
-//   // align-items: center;
-// }
+
 
 .ai-intro-tabs{
-  background-image: url("../assets/images/header-back-1.jpg");
+  position: relative; 
+  // background-image: url("/assets/images/header/portfolio-back-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -17,9 +10,8 @@
   justify-content: center;
   align-items: center;
   height: 50vh;
-  position: relative;
   color: #fff;
-  // background: #eee;
+  background: rgb(3, 0, 12);
   text-align: center;
   padding: 0 2em;
   h1 {
@@ -30,37 +22,39 @@
   h3 {
     font-size: 1rem;
     letter-spacing: 0.3rem;
-    opacity: 0.6;
+    opacity: 0.7;
+    
   }
-  .logo {
-    // font-family: Arial, sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    // color: #333;
-    text-transform: uppercase;
-    font-style: italic;
-    margin-top: 10px;
-    font-size: 19px;
-    width: 300px;
-    color: #f7f4f4;
+  
+  .slideshow-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 5s ease;
+    
   }
+
+  
 }
+
+
+
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-// html, body{
-//   height: 100%;
-//   font-weight: 800;
-//   margin: 0;
-//   padding: 0;
-// }
-
 
 .container {
+  position: relative; 
   display: flex;
-/*   border:1px solid red; */
-  height: 100%;
+  // border:1px solid red; 
+  height: 50%;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.616);
+  border-radius: 50px;
 }
 
 svg {
@@ -73,7 +67,7 @@ svg {
 
 .text-copy {
     fill: none;
-    stroke: white;
+    stroke: #c6d8d3e7;
     stroke-dasharray: 8% 25%;
     stroke-width: 5px;
     stroke-dashoffset: 0%;
@@ -101,7 +95,7 @@ svg {
 }
 
 .text-copy:nth-child(5){
-	stroke: #fff;
+	stroke: #2d463de7;
 	animation-delay: -5s;
 }
 
