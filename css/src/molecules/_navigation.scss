@@ -1,44 +1,81 @@
+// Default styles
 
+.ai-intro-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 10px 150px rgba(0, 0, 0, 0.205);
+  background: #c6d8d3e7;
+  z-index: 1;
 
-.ai-intro-tabs-container{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    box-shadow: 0 10px 150px rgba(0, 0, 0, 0.1);
-    background: #c6d8d3e7;
-    z-index: 1;
-    &--top {
-        position: fixed;
-        top: 0;
-    }
+  &--top {
+    position:relative;
+    top: 0;
+  }
 }
 
-.ai-intro-tab{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    color: #333;
-    letter-spacing: 0.1rem;
-		transition: all 0.5s ease;
-		font-size: 1.3rem;
-	  &:hover {
-			color: #fff;
-      background: #2f4d43d7;
-			transition: all 0.5s ease;
-      border-radius: 5px;
-    }
-}
+.ai-intro-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #333;
+  letter-spacing: 0rem;
+  transition: all 0.5s ease;
+  font-size: 0.9rem;
 
-.ai-intro-tab-slider{
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    height: 10px;
-    background:#2f4d43d7;
-    transition: left 0.3s ease;
+  &:hover {
+    color: #fff;
+    background: #2f4d43d7;
+    transition: all 0.5s ease;
     border-radius: 5px;
+  }
+}
+
+.ai-intro-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 10px;
+  background: #2f4d43d7;
+  transition: left 0.3s ease;
+  border-radius: 5px;
+}
+
+// Media queries
+
+@media only screen and (min-width: 768px) {
+  // Medium screens
+  .ai-intro-tabs-container {
+    height: 70px;
+    letter-spacing: 0.1rem;
+
+    &--top {
+    position: fixed;
+    top: 0;
+  }
+  }
+
+  .ai-intro-tab {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  // Large screens
+  .ai-intro-tabs-container {
+    height: 80px;
+
+    &--top {
+    position: fixed;
+    top: 0;
+  }
+  }
+
+  .ai-intro-tab {
+    font-size: 1.8rem;
+  }
 }
