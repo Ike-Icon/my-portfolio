@@ -1,97 +1,142 @@
 #portfolio {
   // background-image: url('/css/src/utility/images/portfolio-back.jpg');
+  background-color: #d5e1ef;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  width: 100vw;
   height: 100vh;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  color: #000;
-  background: #eee;
-  text-align: center;
-  // padding: 0 2em;
-  margin: 20px 0;
-  h1 {
-    font-size: 2rem;
-    margin: 0;
-    letter-spacing: 1rem;
-  }
-  h3 {
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
-    opacity: 0.6;
-  }
-}
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-figure {
-  margin: 0;
-}
-figcaption {
-  font-style: italic;
-  font-size: 0.8em;
-  color: grey;
-  line-height: 1.4;
-}
+  .container-port {
+    width: 100%;
+    height: 100%;
 
-// --------------------------
-// Grid styles
-// --------------------------
-.grid {
-  display: grid;
-  grid-auto-flow: column; // display the items in columns only, ie horizontal
-  grid-auto-columns: 90%; // create as many columns as there are items. 90% so we can see next item on the right.
-  grid-gap: 1em;
-  // overflow-x: scroll; // scroll only within the grid, not entire page
-  // -webkit-overflow-scrolling: touch; // better scrolling on touch
-  padding: 2em 1em;
-  background: white;
-
-  // @media all and (min-width: 600px) {
-  //   grid-auto-flow: initial; // default: display items in rows and cols
-  //   grid-template-columns: repeat(
-  //     auto-fit,
-  //     minmax(auto, 20em)
-  //   ); // as many columns with max-width of 20em;
-  //   justify-content: center; // center the items - this is optional
-  // }
-
-  &__figure {
-    display: grid;
-    // grid-template-rows: 15em 1fr; // 15em high row for image – value could be whatever
-    grid-gap: 1em;
-
-    img {
-      // width: 100%;
-      // height: 100%;
-      object-fit: cover; // crop image within its cell
-      border: none;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      background: #ccc;
-      transition: transform 0.2s ease-in-out;
-      &:hover {
-        transform: scale(1.15);
-      }
+    .card {
+      background-color: #f9fafe;
+      width: 550px;
+      height: 45%;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 30px 0 0 0;
+      transition: transform 400ms;
+      opacity: 0.5;
+      box-shadow: none;
     }
 
-    // a:hover img {
-    //     transform: scale(1.15);
-    //   }
+  
 
-    // &:hover {
-    //   color: #fff;
-    //   background: #2f4d43d7;
-    //   transition: all 0.5s ease;
-    //   border-radius: 5px;
-    //   width: 90%;
-    // }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 150px;
+      border: 5px solid #f9fafe;
+      box-shadow: 0 0 50px #ccc;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-60px, -60px);
+      z-index: 1;
+    }
+
+    .header {
+      margin: 50px 0 0 0;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .name {
+      font-family: 'Hammersmith One', sans-serif;
+      text-transform: uppercase;
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .title {
+      font-family: 'Hammersmith One', sans-serif;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      margin: 5px 0 0 0;
+      padding: 0 5px;
+      color: #7ccdc5;
+    }
+
+    .quote-container {
+      margin: 0;
+      height: 100%;
+      z-index: 1;
+      padding: 15px 30px 30px 30px;
+      overflow: hidden;
+    }
+
+    .quote {
+      width: 100%;
+      height: 95%;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      text-align: center;
+      color: #73808c;
+      margin: 0;
+    }
+
+    .swiper {
+      width: 60%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide-active {
+      z-index: 1;
+    }
+
+    .swiper-slide-active .card {
+      box-shadow: 0 8px 30px -7px #c9dff0;
+      opacity: 1;
+      transform: scale(1.5);
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-button-next:focus,
+    .swiper-button-prev:focus {
+      outline: none;
+    }
+
+    @media (max-height: 400px) {
+      .header {
+        margin: 40px 0 0 0;
+      }
+      .name {
+        font-size: 12px;
+      }
+      .title {
+        font-size: 10px;
+      }
+      .quote-container {
+        padding: 5px 20px 20px 20px;
+      }
+      .quote-icon {
+        width: 75px;
+        height: 75px;
+      }
+      .avatar {
+        width: 100px;
+        height: 100px;
+        transform: translate(-50px, -50px);
+      }
+    }
   }
 }

@@ -26,3 +26,8 @@ const images = [
     changeImage();
   }, 7000);
   
+
+
+
+
+  

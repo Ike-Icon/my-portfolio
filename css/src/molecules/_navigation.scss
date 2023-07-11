@@ -27,12 +27,7 @@
   transition: all 0.5s ease;
   font-size: 0.9rem;
 
-  &:hover {
-    color: #fff;
-    background: #2f4d43d7;
-    transition: all 0.5s ease;
-    border-radius: 5px;
-  }
+  
 }
 
 .ai-intro-tab-slider {
@@ -47,7 +42,7 @@
 
 // Media queries
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) {
   // Medium screens
   .ai-intro-tabs-container {
     height: 70px;
@@ -61,10 +56,17 @@
 
   .ai-intro-tab {
     font-size: 1.2rem;
+
+    &:hover {
+    color: #fff;
+    background: #2f4d43d7;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+  }
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 993px) {
   // Large screens
   .ai-intro-tabs-container {
     height: 80px;

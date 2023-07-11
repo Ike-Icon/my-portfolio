@@ -1,0 +1,47 @@
+/* CSS for Back to Top button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #253b34d7;
+  color: #f7f4f4;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  //   visibility: visible;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+// Media queries
+
+@media only screen and (min-width: 768px) {
+  // Medium screens
+  .back-to-top{
+    font-size: 30px;
+    width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  }
+  
+}
+
+@media only screen and (min-width: 1024px) {
+  // Large screens
+  .back-to-top{
+    font-size: 40px;
+    width: 50px;
+  height: 50px;
+  }
+}
