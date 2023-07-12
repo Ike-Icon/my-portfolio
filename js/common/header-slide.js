@@ -1,7 +1,7 @@
 const images = [
-    // '/assets/images/header/programming-g.jpg',
-    '/assets/images/header/portfolio-back-2.jpg',
-    '/assets/images/header/header-back.png',
+    '../assets/images/header/programming-g.jpg',
+    '../assets/images/header/portfolio-back-2.jpg',
+    '../assets/images/header/header-back.png',
     '../assets/images/header/header-back-2.jpg',
     '../assets/images/header/header-back-1.jpg',
     '../assets/images/header-back-1.jpg'

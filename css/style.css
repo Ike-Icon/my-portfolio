@@ -712,7 +712,7 @@ footer {
   }
   /* Generates animations for cascading tiles */
   .photo-about {
-    background: url("/assets/images/ike-2black.jpg") no-repeat center center;
+    background: url("../assets/images/ike-2black.jpg") no-repeat center center;
     background-size: cover;
     z-index: 0;
   }
@@ -729,7 +729,7 @@ footer {
   }
 }
 #services {
-  background-image: url("/assets/images/service-back-2.jpg");
+  background-image: url("../assets/images/service-back-2.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -754,7 +754,7 @@ footer {
 }
 
 #portfolio {
-  background-image: url("/assets/images/portfolios/port-back.jpg");
+  background-image: url("../assets/images/portfolios/port-back.jpg");
   justify-content: center;
   align-items: center;
   position: relative;
