@@ -13,7 +13,7 @@ a {
   height: 60px;
   box-shadow: 0 10px 150px rgba(0, 0, 0, 0.205);
   background: rgba(198, 216, 211, 0.9058823529);
-  z-index: 1;
+  z-index: 10;
 }
 .ai-intro-tabs-container--top {
   position: relative;
@@ -121,12 +121,13 @@ input[type=submit] {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
-  z-index: 1;
+  z-index: 20;
 }
 
 .back-to-top.show {
   opacity: 1;
   visibility: visible;
+  padding: 5px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -142,6 +143,7 @@ input[type=submit] {
     font-size: 40px;
     width: 50px;
     height: 50px;
+    padding: 8px;
   }
 }
 .ai-intro-tabs {
@@ -175,7 +177,7 @@ input[type=submit] {
   font-family: "ROBOTO", sans-serif;
   font-weight: 300;
   color: #faebd7;
-  z-index: 4;
+  z-index: 1;
 }
 .ai-intro-tabs span:hover {
   color: #ff0266;
@@ -752,22 +754,27 @@ footer {
 }
 
 #portfolio {
-  background-color: #d5e1ef;
+  background-image: url("/assets/images/portfolios/port-back.jpg");
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  width: 100vw;
   height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 #portfolio .container-port {
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
-#portfolio .container-port .card {
-  background-color: #f9fafe;
-  width: 550px;
-  height: 45%;
+#portfolio .card-port {
+  background-color: rgba(218, 216, 216, 0.836);
+  width: 100%;
+  height: 40%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -778,11 +785,123 @@ footer {
   transition: transform 400ms;
   opacity: 0.5;
   box-shadow: none;
+  transition: transform 0.5s;
 }
-#portfolio .container-port .avatar {
+#portfolio .swiper-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .swiper-slide-active .card-port {
+  box-shadow: 0 8px 30px -7px #1a1c1d;
+  opacity: 1;
+  transform: scale(1.2) translateY(-50px);
+}
+#portfolio .swiper-button-prev,
+#portfolio .swiper-button-next,
+#portfolio .swiper-pagination {
+  color: #ffffff;
+}
+#portfolio .swiper {
+  width: 80%;
+  height: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#portfolio .swiper-slide-active {
+  z-index: 4;
+  transition: transform 0.9s;
+}
+#portfolio .swiper-slide-active:hover {
+  transform: scale(1.1);
+}
+#portfolio .line-title {
+  position: relative;
+  width: 50%;
+  margin: 60px auto;
+  margin-bottom: 20px;
+}
+#portfolio h3 {
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  font-size: 45px;
+  line-height: 28px;
+  font-weight: 600;
+  position: relative;
+  text-transform: capitalize;
+  color: #f2f2f2;
+}
+#portfolio .loader span {
+  color: #f2f2f2;
+  text-shadow: 0 0 0 rgba(152, 247, 215, 0.8431372549);
+  animation: loading 2s ease-in-out infinite alternate;
+}
+@keyframes loading {
+  to {
+    text-shadow: 20px 0 70px #f2f2f2;
+    color: #5b9280;
+  }
+}
+#portfolio .loader span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+#portfolio .loader span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+#portfolio .loader span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+#portfolio .loader span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+#portfolio .loader span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+#portfolio .loader span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+#portfolio .loader span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+#portfolio .loader span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+#portfolio .line-title::before,
+#portfolio .line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+  animation-duration: 2s; /* Set the duration of the animation */
+  animation-iteration-count: infinite;
+}
+#portfolio .line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+  animation-name: line-animation;
+}
+#portfolio .line-title::after {
+  width: 50%;
+  background: rgba(91, 146, 128, 0.8431372549);
+  animation-name: line-animation;
+}
+@keyframes line-animation {
+  0% {
+    transform: scaleX(0); /* Start with no width */
+  }
+  50% {
+    transform: scaleX(1); /* Expand the width to full */
+  }
+  100% {
+    transform: scaleX(0); /* Reduce the width back to 0 */
+  }
+}
+#portfolio .avatar {
   width: 120px;
   height: 120px;
-  border-radius: 150px;
+  border-radius: 10px;
   border: 5px solid #f9fafe;
   box-shadow: 0 0 50px #ccc;
   position: absolute;
@@ -791,18 +910,18 @@ footer {
   transform: translate(-60px, -60px);
   z-index: 1;
 }
-#portfolio .container-port .header {
+#portfolio .header {
   margin: 50px 0 0 0;
   text-align: center;
   z-index: 1;
 }
-#portfolio .container-port .name {
+#portfolio .name {
   font-family: "Hammersmith One", sans-serif;
   text-transform: uppercase;
   font-size: 22px;
   margin: 0;
 }
-#portfolio .container-port .title {
+#portfolio .title {
   font-family: "Hammersmith One", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -811,14 +930,14 @@ footer {
   padding: 0 5px;
   color: #7ccdc5;
 }
-#portfolio .container-port .quote-container {
+#portfolio .quote-container {
   margin: 0;
   height: 100%;
   z-index: 1;
   padding: 15px 30px 30px 30px;
   overflow: hidden;
 }
-#portfolio .container-port .quote {
+#portfolio .quote {
   width: 100%;
   height: 95%;
   font-family: "Poppins", sans-serif;
@@ -826,54 +945,6 @@ footer {
   text-align: center;
   color: #73808c;
   margin: 0;
-}
-#portfolio .container-port .swiper {
-  width: 60%;
-  height: 100%;
-}
-#portfolio .container-port .swiper-slide {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-#portfolio .container-port .swiper-slide-active {
-  z-index: 1;
-}
-#portfolio .container-port .swiper-slide-active .card {
-  box-shadow: 0 8px 30px -7px #c9dff0;
-  opacity: 1;
-  transform: scale(1.5);
-}
-#portfolio .container-port .swiper {
-  margin-left: auto;
-  margin-right: auto;
-}
-#portfolio .container-port .swiper-button-next:focus,
-#portfolio .container-port .swiper-button-prev:focus {
-  outline: none;
-}
-@media (max-height: 400px) {
-  #portfolio .container-port .header {
-    margin: 40px 0 0 0;
-  }
-  #portfolio .container-port .name {
-    font-size: 12px;
-  }
-  #portfolio .container-port .title {
-    font-size: 10px;
-  }
-  #portfolio .container-port .quote-container {
-    padding: 5px 20px 20px 20px;
-  }
-  #portfolio .container-port .quote-icon {
-    width: 75px;
-    height: 75px;
-  }
-  #portfolio .container-port .avatar {
-    width: 100px;
-    height: 100px;
-    transform: translate(-50px, -50px);
-  }
 }
 
 #contact {

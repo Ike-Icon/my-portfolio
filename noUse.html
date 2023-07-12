@@ -1,98 +1,98 @@
-<div class="container-port">
-    <h2 class="line-title">Portfolio</h2>
-    <div class="swiper swiperCarousel">
-        <div class="swiper-wrapper">
 
 
 
-            <div class="swiper-slide">
-                <div class="card-port"
-                    style="background-image: url(https://ucarecdn.com/75d7700d-c102-40ff-9ba1-f0641444c616/dota2.jpg);">
-                    <div class="item-desc">
-                        <h3>Dota 2</h3>
-                        <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-                            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-                    </div>
-                </div>
-            </div>
+#portfolio {
+// background-image: url('/css/src/utility/images/portfolio-back.jpg');
+background-color: #d5e1ef;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+width: 100vw;
+height: 100vh;
+
+.container-port {
+width: 100%;
+height: 100%;
+}
+
+.card-port {
+background-color: #f9fafe;
+width: 550px;
+height: 45%;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+padding: 30px 0 0 0;
+transition: transform 400ms;
+opacity: 0.5;
+box-shadow: none;
+}
+
+.swiper-slide {
+display: flex !important;
+justify-content: center;
+align-items: center;
+}
+
+.swiper-slide-active .card-port {
+box-shadow: 0 8px 30px -7px #c9dff0;
+opacity: 1;
+transform: scale(1.5);
+}
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+outline: none;
+}
+
+.swiper {
+width: 80%;
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.swiper-slide-active {
+z-index: 1;
+}
+}
 
 
-            <div class="swiper-slide">
-                <div class="card-port"
-                    style="background-image: url(https://ucarecdn.com/2a5f69bc-befa-49f4-acc6-ab1dcae514c7/winter3.jpg);">
-                    <div class="item-desc">
-                        <h3>The Witcher 3</h3>
-                        <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
-                            of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft
-                            III.</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="swiper-slide">
-                <div class="card-port"
-                    style="background-image: url(https://ucarecdn.com/ec1918b1-2674-452c-bf61-8f73d8cc40c6/rdr2.jpg);">
-                    <div class="item-desc">
-                        <h3>RDR 2</h3>
-                        <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-                            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-                    </div>
-                </div>
-            </div>
 
 
 
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </div>
-
-
-
-    .container-port {
-    width: 100%;
-    height: 100%;
-    }
+    // Get the carousel element
+    const carousel = document.querySelector(".custom-carousel");
     
-    .card-port {
-    background-color: #f9fafe;
-    width: 550px;
-    height: 45%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 30px 0 0 0;
-    transition: transform 400ms;
-    opacity: 0.5;
-    box-shadow: none;
-    }
+    // Initialize the carousel
+    const owlCarousel = new OwlCarousel(carousel, {
+    autoWidth: true,
+    loop: true,
+    });
     
-    .swiper {
-    width: 100%;
-    height: 100%;
-    }
+    // Get all items in the carousel
+    const items = carousel.querySelectorAll(".item");
     
-    .swiper-slide-active {
-    z-index: 1;
+    // Add click event listeners to the items
+    items.forEach((item) => {
+    item.addEventListener("click", () => {
+    // Remove "active" class from other items
+    items.forEach((otherItem) => {
+    if (otherItem !== item) {
+    otherItem.classList.remove("active");
     }
+    });
     
-    .swiper-slide-active .card {
-    box-shadow: 0 8px 30px -7px #c9dff0;
-    opacity: 1;
-    transform: scale(1.5);
-    }
+    // Toggle "active" class on the clicked item
+    item.classList.toggle("active");
+    });
+    });
     
-    .swiper {
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
-    .swiper-button-next:focus,
-    .swiper-button-prev:focus {
-    outline: none;
+    // OwlCarousel class definition
+    function OwlCarousel(element, options) {
+    // Your implementation of the carousel class
     }

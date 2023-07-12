@@ -16,12 +16,13 @@
   //   visibility: visible;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
-  z-index: 1;
+  z-index: 20;
 }
 
 .back-to-top.show {
   opacity: 1;
   visibility: visible;
+  padding: 5px;
 }
 
 // Media queries
@@ -43,5 +44,6 @@
     font-size: 40px;
     width: 50px;
   height: 50px;
+  padding: 8px;
   }
 }
