@@ -1,7 +1,7 @@
 // Config
 
 
-// Bower Components
+// Browser Components
 
 
 // General DOM selector styles
@@ -23,7 +23,7 @@
 @import "molecules/backToTop";
 
 // organisms
-@import "organisms/_header.scss";
+@import "organisms/header";
 @import "organisms/footer";
 
 
@@ -42,18 +42,18 @@ body {
     font-family: "Century Gothic", 'Lato', sans-serif;
 }
 
-@media (min-width: 700px) {
-	.ai-intro-tabs,
-	.ai-slide {
-    h1 {
-        font-size: 3rem;
-    }
-    h3 {
-        font-size: 1rem;
-    }
-	}
-	.et-hero-tab {
-		font-size: 1rem;
-	}
-}
+// @media (min-width: 900px) {
+// 	.ai-intro-tabs,
+// 	.ai-slide {
+//     h1 {
+//         font-size: 3rem;
+//     }
+//     h3 {
+//         font-size: 1rem;
+//     }
+// 	}
+// 	.et-hero-tab {
+// 		font-size: 1rem;
+// 	}
+// }
 

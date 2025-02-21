@@ -22,3 +22,9 @@ for (var items = document.querySelectorAll(".item"), i = 0; i < items.length; i+
     var color = items[i].getAttribute("data-color");
     items[i].style.backgroundColor = "#" + color
   }
+
+
+  // Hamburger button appears only on small screens.
+  function toggleMenu() {
+    document.querySelector(".mobile-menu").classList.toggle("show");
+  }
