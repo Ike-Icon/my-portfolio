@@ -1,8 +1,8 @@
 const images = [
-    '../assets/images/header/header-back-l2.jpg',
-    '../assets/images/header/header-back-l1.jpg',
-    '../assets/images/header/header-back-r1.jpg',
-    '../assets/images/header/header-back-r2.jpg'
+    'assets/images/header/header-back-l2.jpg',
+    'assets/images/header/header-back-l1.jpg',
+    'assets/images/header/header-back-r1.jpg',
+    'assets/images/header/header-back-r2.jpg'
     // '../assets/images/header/header-back.jpg'
     
   ];
